@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldfish - Products - AquaRim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="main.html"><img src="image/logo.png" alt="AquaRim Logo" width="150px" ></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="acc.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="image/cart.png" alt="cart" width="30px" height="30px"></a>
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!---- Single Product----->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/product-7.jpg" width="100%" id="productimg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/product-7.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/product-7b.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/product-7a.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <p>Home / Outdoor Fish</p>
+                <h1>Goldfish</h1>
+                <h4>Rp 35.000</h4>
+                <select>
+                    <option>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Random</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+
+                <h3>Product Details <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>A classic favorite for every fish lover! Goldfish are gentle, social, and thrive in peaceful tank setups.</p>
+                <ul>
+                    <li><strong>Size:</strong> 5–10 cm</li>
+                    <li><strong>Care:</strong> Easy</li>
+                    <li><strong>Temp:</strong> 20–23°C</li>
+                    <li><strong>Diet:</strong> Omnivore</li>
+                    <li><strong>Lifespan:</strong> 5–10 years</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="image/product-9.jpg">
+                <h4>Tetra Fish</h4>
+                <div class="rating">★★★★★</div>
+                <p>Rp 20.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-10.jpg">
+                <h4>Discus Fish</h4>
+                <div class="rating">★★★★★</div>
+                <p>Rp 80.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-11.jpg">
+                <h4>Oscar Fish</h4>
+                <div class="rating">★★★★☆</div>
+                <p>Rp 100.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-12.jpg">
+                <h4>Zebra Danio Fish</h4>
+                <div class="rating">★★★★☆</div>
+                <p>Rp 14.000</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-------- footer -------->
+    <footer>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Visit Our Store</h3>
+                    <p>Jl. Ikan Hias No.7, Jakarta, Indonesia</p>
+                    <p>Open Daily: 10 AM – 7 PM</p>
+                    <p>Call us: (021) 1234 5678</p>
+                    <p>Come meet your next finned friend in person!</p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#navbar"><img src="image/logo.png" alt="AquaRim Logo"></a>
+                    <p>Our Mission Is To Provide the Best Aquatic Experience for Fish Lovers Everywhere.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Shipment Policy</li>
+                        <li>FAQs</li>
+                        <li>Provacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2025 AquaRim. All rights reserved.</p>
+        </div>
+    </section>        
+    </footer>
+
+    <!----js for toggle-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {menuitems.style.maxHeight = "200px"}
+            else
+                menuitems.style.maxHeight = "0px"
+        }
+    </script>
+
+    <!--- js for product gallery --->
+    <script>
+        var productimg = document.getElementById("productimg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            productimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            productimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            productimg.src = smallimg[2].src;
+        }
+    </script>
+</body>
+</html>
